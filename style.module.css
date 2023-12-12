@@ -1,0 +1,155 @@
+/* App.css */
+
+/* Styles for Welcome Component */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a202c;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .welcome-container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  #welcome-message {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4299e1; /* Tailwind: text-blue-500 */
+  }
+  
+  #app-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #a0aec0; /* Tailwind: text-gray-400 */
+  }
+  
+  #next-page-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #2d3748; /* Tailwind: text-gray-700 */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #next-page-btn:hover {
+    background-color: #cbd5e0; /* Tailwind: bg-gray-300 */
+  }
+  
+  footer {
+    margin-top: 20px;
+  }
+  
+  /* Styles for Todo List Component */
+  .todolist-container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .task-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .action-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .action-btn:hover {
+    background-color: #ccc;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .task-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #555;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+  }
+  
+  .task-item:hover .task-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #777;
+  }
+  
+  .deleted-tasks {
+    margin-top: 20px;
+  }
+  
+  /* Common Styles */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  footer p {
+    margin: 0;
+    align-items: center;
+  }
